@@ -6,9 +6,9 @@ function run ($argc, $argv)
 	$base_url = 'http://challenge-server.code-check.io/';
 
 	$response = file_get_contents(
-                  $base_url.'/api/hash/'
+                  $base_url.'/api/hash/'.$value
             );
 	$result = json_decode($response,true);
-
+	echo $result;
 	  }
 }
